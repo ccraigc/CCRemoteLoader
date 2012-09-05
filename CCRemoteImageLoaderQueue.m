@@ -202,11 +202,11 @@ static CCRemoteImageLoaderQueue *__instance;
 }
 
 -(BOOL)reachable {
-    Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
+    /*Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
     NetworkStatus internetStatus = [r currentReachabilityStatus];
     if(internetStatus == NotReachable) {
         return NO;
-    }
+    }*/
     return YES;
 }
 

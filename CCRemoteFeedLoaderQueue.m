@@ -172,14 +172,14 @@ static CCRemoteFeedLoaderQueue *__instance;
 
 -(BOOL)reachable {
     NSLog(@"feedloadop reachability check");
-    Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
+    /*Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
     NetworkStatus internetStatus = [r currentReachabilityStatus];
     if(internetStatus == NotReachable) {
         return NO;
     }
     else {
         return YES;
-    }
+    }*/
 }
 
 + (id)parseJSONData:(NSData *)theData {
